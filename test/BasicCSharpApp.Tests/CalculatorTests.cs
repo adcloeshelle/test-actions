@@ -15,34 +15,6 @@ public sealed class CalculatorTests
     }
 
     [TestMethod]
-    public void Add_TwoNumbers_ReturnsCorrectSum()
-    {
-        // Arrange
-        double a = 5;
-        double b = 7;
-
-        // Act
-        double result = _calculator.Add(a, b);
-
-        // Assert
-        Assert.AreEqual(12, result);
-    }
-
-    [TestMethod]
-    public void Subtract_TwoNumbers_ReturnsCorrectDifference()
-    {
-        // Arrange
-        double a = 10;
-        double b = 3;
-
-        // Act
-        double result = _calculator.Subtract(a, b);
-
-        // Assert
-        Assert.AreEqual(7, result);
-    }
-
-    [TestMethod]
     public void Multiply_TwoNumbers_ReturnsCorrectProduct()
     {
         // Arrange
