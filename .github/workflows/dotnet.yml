@@ -54,7 +54,8 @@ jobs:
 
   coverage-summary:
     name: Generate Coverage Summary
-    needs: build
+    needs: ${{ github.event_name != 'label' && 'build' || '' }}
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
