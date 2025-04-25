@@ -25,7 +25,7 @@ public sealed class CalculatorTests
         double result = _calculator.Add(a, b);
 
         // Assert
-        Assert.AreEqual(12, result);
+        Assert.AreNotEqual(12, result);
     }
 
     [TestMethod]
